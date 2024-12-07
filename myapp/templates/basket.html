@@ -1,0 +1,19 @@
+{% extends "menu.html" %}
+
+{% block title %}
+    {{ block.super }}
+{% endblock %}
+
+{% block pagename %}
+    <h1>Корзина</h1>
+{% endblock %}
+
+
+{% block menu %}
+    <p><a href = "{% url 'first_page' %}">Главная</a></p>
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <h2>На данный момент вы ничего не приобрели</h2>
+{% endblock %}

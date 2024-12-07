@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Umbrella Corporation{% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        <h1>Главная страница Umbrella Corporation</h1>
+        {% endblock %}
+    </header>
+
+    <nav>
+        {% block menu %}
+        <p><a href="{% url 'shop' %}">Магазин</a></p>
+        <p><a href="{% url 'basket' %}">Корзина</a></p>
+        {% endblock %}
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
