@@ -51,6 +51,7 @@ def sign_up_by_django(request):
                     info['error'] = 'Пользователь уже существует'
                 else:
                     Buyer.objects.create(name=username, balance=0, age=age)
+                    return HttpResponse(f'Приветствуем, {username}!')
 
     else:
         form = UserRegister()
