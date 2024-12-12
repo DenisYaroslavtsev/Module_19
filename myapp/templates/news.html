@@ -1,8 +1,8 @@
 {% extends 'menu.html' %}
 {% block pagename %}<h1>Игры</h1>{% endblock %}
-{% block menu %}{{ block.super }}{% endblock %}
 {% block content %}
     <hr>
+    <h1>Новости ИгроМании:</h1>
     {% for new in news %}
         <h2>{{ new.title }}</h2>
         <br>
