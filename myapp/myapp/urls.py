@@ -24,7 +24,7 @@ urlpatterns = [
     path('platform/', func, name='first_page'),
     path('platform/games/', shop, name='shop'),
     path('platform/cart/', basket, name='basket'),
-    path('', sign_up_by_django, name='djaango_sign_up'),
+    path('', sign_up_by_django, name='django_sign_up'),
     path('html_sign_up/', sign_up_by_html),
     path('platform/news', news)
 ]
